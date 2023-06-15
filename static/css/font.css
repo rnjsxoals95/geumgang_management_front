@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'KoPub';
+    src: url(../font/KoPub\ Dotum\ Bold.ttf) format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'KoPub';
+    src: url(../font/KoPub\ Dotum\ Medium.ttf) format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'KoPub';
+    src: url(../font/KoPub\ Dotum\ Light.ttf.ttf) format('opentype');
+    font-weight: 100;
+}

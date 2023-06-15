@@ -1,0 +1,86 @@
+.add-btn {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#add-person {
+    width: 115px;
+    height: 30px;
+    background-color: #146EF6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+#add-person > img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.content-table {
+    display: block;
+    margin-top: 25px;
+}
+
+.table-count {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.table-count > span {
+    font-weight: 100;
+}
+
+.page-number {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.prev > button {
+    width: 33px;
+    height: 33px;
+    background-color: white;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.prev {
+    margin-right: 30px;
+}
+
+.next > button {
+    width: 33px;
+    height: 33px;
+    background-color: white;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.next {
+    margin-left: 30px;
+}
+
+.page-number-btn {
+    width: 33px;
+    height: 33px;
+    background-color: white;
+    border: 1px solid #C9C9C9;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.page-number-btn:nth-child(1) {
+    margin-left: 0;
+}
+
+.page-number-btn-active {
+    background-color: #146EF6;
+    color: white;
+}

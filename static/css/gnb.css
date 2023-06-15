@@ -1,0 +1,380 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+    overflow: hidden;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'KoPub';
+    overflow-y: hidden;
+    background-color: #F5F6F6;
+}
+
+input {
+    font-family: 'KoPub';
+    font-weight: 100;
+}
+
+select {
+    font-family: 'KoPub';
+    font-weight: 100;
+    padding: 10px 0;
+}
+
+ul, li, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+pre {
+    font-family: 'KoPub';
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, p {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul, li {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'KoPub';
+    display: inline-block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+button{
+    font-family: 'KoPub';
+    border: 0;
+    background-color: transparent;
+}
+
+.content-depth {
+    padding: 0 40px;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, select, table, button, input
+li, span, th, tr, th {
+    transform: skew(-0.1deg);
+}
+
+/* css 기본세팅 */
+
+header {
+    background-color: #363636;
+    width: 100%;
+    height: 65px;
+}
+
+.hdr-content > ul {
+    display: flex;
+    align-items: center;
+}
+
+.hdr-menu {
+    display: flex;
+}
+
+header > .content-depth {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+.hdr-info {
+    color: white
+}
+
+.hdr-info {
+    position: absolute;
+    right: 40px;
+}
+
+.hdr-info > span {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.line {
+    margin-left: 20px;
+}
+
+#logout {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0;
+    margin-left: 20px;
+}
+
+/* 사이드바 */
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.side-menu {
+    width: 195px;
+    height: 100%;
+    background-color: #E1E1E1;
+    display: inline-block;
+}
+
+.side-menu > ul > li > span{
+    padding-left: 40px;
+}
+
+.side-menu > ul > li:nth-child(1) > span {
+    padding-top: 40px;
+}
+
+
+.side-menu > ul > li {
+    width: 100%;
+}
+
+.inner-menu > button:hover {
+    background-color: #BEBEBE;
+}
+
+.side-menu > ul > li > button {
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.side-menu > ul > li > span {
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.side-menu > ul > li:nth-child(1) > span {
+    margin-top: 0;
+}
+
+.inner-menu > button {
+    width: 100%;
+    text-align: left;
+    padding-left: 60px;
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+/* 컨텐츠 상단 */
+
+.content-details {
+    display: inline-block;
+    width: 100%;
+}
+
+.title-box {
+    margin-top: 40px;
+    width: 100%;
+    border: 1px solid #C9C9C9;
+    background-color: white;
+}
+
+.title-box > ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.page-flow {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.search-box {
+    margin-top: 35px;
+    width: 100%;
+    border: 1px solid #C9C9C9;
+    padding: 15px 40px;
+    background-color: white;
+}
+
+.area {
+    display: inline-block;
+}
+
+.area > span {
+    display: inline-block;
+}
+
+.area > select {
+    width: 105px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 6px;
+    padding: 0 14px;
+}
+
+.category {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.category-button {
+    border: 1px solid #C9C9C9;
+    background-color: white;
+    width: 105px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 6px;
+    font-weight: 100;
+}
+
+.category-active {
+    background-color: #146EF6;
+    color: white;
+    font-weight: 300;
+    width: 105px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.date {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.date > input {
+    width: 105px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 20px;
+    padding: 0 15px;
+    border: 1px solid #C9C9C9;
+    cursor: pointer;
+}
+
+.center-line {
+    margin-left: 20px;
+}
+
+#search-submit {
+    background-color: #146EF6;
+    color: white;
+    font-weight: 300;
+    width: 75px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.search-text {
+    float: right;
+    display: inline-block;
+}
+
+.search-text > button {
+    vertical-align: top;
+}
+
+.search-text > input {
+    padding: 0 10px;
+}
+
+#search-box {
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #C9C9C9;
+}
+
+
+/* 테이블 속성 */
+
+table {
+    border: 1px solid #707070;
+    font-weight: 100;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+}
+
+table > thead {
+    border: 1px solid #707070;
+    background-color: #C7C7C7;
+}
+
+th, td {
+    border: 1px solid #707070;
+    padding: 10px;
+}

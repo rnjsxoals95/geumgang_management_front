@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./static/css/font.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/gnb.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    </head>
+    <body>
+        <body class="layer">
+            <header>
+                <div class="content-depth">
+                    <div class="hdr-content">
+                        <ul>
+                            <li class="hdr-menu">
+                                <button type="button" id="hamberger">
+                                    <img src="./static/img/hamberger-icon.png">
+                                </button>
+                                <button type="button" class="logo">금강 컨테이너 관리자페이지</button>
+                            </li>
+                            <li class="hdr-info">
+                                <span id="user-name">admin01</span>
+                                <span class="line">|</span>
+                                <button id="logout">로그아웃</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <section class="side-menu">
+                    <ul>
+                        <li>
+                            <span>메인</span>
+                        </li>
+                        <li>
+                            <span>업무</span>
+                            <div class="inner-menu">
+                                <button id="inner-side-menu-01">직원</button>
+                                <button id="inner-side-menu-02">고객</button>
+                                <button id="inner-side-menu-03">냉·난방</button>
+                                <button id="inner-side-menu-04">용품</button>
+                            </div>
+                        </li>
+                        <li>
+                            <span>컨테이너</span>
+                            <div class="inner-menu">
+                                <button id="inner-side-menu-05">관리</button>
+                                <button id="inner-side-menu-06">임대</button>
+                                <button id="inner-side-menu-07">구매·판매</button>
+                                <button id="inner-side-menu-08">운송</button>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content-details">
+                    <section class="content-fix">
+                        <div class="content-depth">
+                            <div class="title-box">
+                                <ul>
+                                    <li>
+                                        <h1 class="page-title">직원관리</h1>
+                                    </li>
+                                    <li>
+                                        <span class="page-flow">회사 > 직원관리</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-box">
+                                <div class="area">
+                                    <span>지점</span>
+                                    <select>
+                                        <option value="광양">광양</option>
+                                        <option value="여수">여수</option>
+                                    </select>
+                                </div>
+                                <div class="category">
+                                    <span>카테고리</span>
+                                    <button type="button" class="category-button category-active" id="category-work-all">전체 : <span id="all-value">0명</span></button>
+                                    <button type="button" class="category-button" id="category-work-on">재직중 : <span id="work-on-value">0명</span></button>
+                                    <button type="button" class="category-button" id="category-work-off">퇴사 : <span id="work-off-value">0명</span></button>
+                                </div>
+                                <div class="date">
+                                    <span>날짜검색</span>
+                                    <input type="date">
+                                    <span class="center-line"> - </span>
+                                    <input type="date">
+                                </div>
+                                <div class="search-text">
+                                    <input type="text" id="search-box" placeholder="이름 또는 연락처 입력">
+                                    <button type="button" id="search-submit">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-sub">
+                        <div class="content-depth">
+                            <div class="add-btn">
+                                <button type="button" id="add-person"><img src="./static/img/user-add-icon.png">직원추가</button>
+                            </div>
+                            <div class="content-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>이름</th>
+                                            <th>연락처</th>
+                                            <th>월급</th>
+                                            <th>휴가</th>
+                                            <th>입사일</th>
+                                            <th>퇴사일</th>
+                                            <th>비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>김길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>3,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>홍길동</td>
+                                            <td>000-0000-0000</td>
+                                            <td>1,000,000</td>
+                                            <td>00.00.00 - 00.00.00</td>
+                                            <td>2023-06-14</td>
+                                            <td>2023-06-15</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="table-count">
+                                    <span>전체 조회 개수 : <span id="table-count-value">10개</span>
+                                </div>
+                                <div class="page-number">
+                                    <div class="prev">
+                                        <button type="button">&#8810;</button>
+                                        <button type="button">&#8826;</button>
+                                    </div>
+                                    <div class="number">
+                                        <button type="button" class="page-number-btn page-number-btn-active">1</button>
+                                        <button type="button" class="page-number-btn">2</button>
+                                        <button type="button" class="page-number-btn">3</button>
+                                        <button type="button" class="page-number-btn">4</button>
+                                        <button type="button" class="page-number-btn">5</button>
+                                        <button type="button" class="page-number-btn">6</button>
+                                        <button type="button" class="page-number-btn">7</button>
+                                        <button type="button" class="page-number-btn">8</button>
+                                        <button type="button" class="page-number-btn">9</button>
+                                        <button type="button" class="page-number-btn">10</button>
+                                    </div>
+                                    <div class="next">
+                                        <button type="button">&#8811;</button>
+                                        <button type="button">&#8827;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </body>
+    </body>
+</html>
