@@ -186,6 +186,11 @@ header > .content-depth {
     display: inline-block;
 }
 
+#hamberger {
+    width: 23px;
+    padding: 0;
+}
+
 .side-menu > ul > li > span{
     padding-left: 40px;
 }
@@ -226,6 +231,27 @@ header > .content-depth {
     font-weight: 100;
     margin-top: 10px;
 }
+
+
+/* 사이드 메뉴 애니메이션 */
+
+.side-menu {
+    display: none;
+}
+
+.side-menu {
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from { margin-left: -300px;}
+    to { margin-left: 0; }
+}
+
+#hamberger:active ~ .side-menu {
+    display: block;
+}
+
 
 /* 컨텐츠 상단 */
 
@@ -281,6 +307,12 @@ header > .content-depth {
     margin-left: 15px;
     border-radius: 6px;
     padding: 0 14px;
+    font-size: 15px;
+}
+
+.area > select > option {
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .category {
@@ -378,3 +410,4 @@ th, td {
     border: 1px solid #707070;
     padding: 10px;
 }
+
