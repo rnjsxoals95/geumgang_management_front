@@ -84,3 +84,7 @@
     background-color: #146EF6;
     color: white;
 }
+
+.mouseOver {
+    background-color: gray;
+}

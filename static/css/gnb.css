@@ -235,11 +235,13 @@ header > .content-depth {
 
 /* 사이드 메뉴 애니메이션 */
 
-.side-menu {
+/* .side-menu {
     display: none;
-}
+} */
 
-.side-menu {
+/* .side-menu {
+    transition: transform 0.4s ease-in-out;
+    animation-duration: 1s;
     animation-name: slide;
 }
 
@@ -248,10 +250,9 @@ header > .content-depth {
     to { margin-left: 0; }
 }
 
-#hamberger:active ~ .side-menu {
+#hamberger:target ~ .side-menu {
     display: block;
-}
-
+} */
 
 /* 컨텐츠 상단 */
 
